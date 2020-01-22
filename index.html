@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo_website</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <header>
+                <div class="header-wrapper">
+                    <div class="header-sec">
+                        <div class="menu-wrapper">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                        <div class="menu-label">
+                            MENU
+                        </div>
+
+
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="banner-wrapper">
+                    <video class="video-bg" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+                            <!-- 
+                          - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+                          WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                          <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+                          <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+                          
+                          </video>
+                    <div class="banner-sec">
+
+
+
+                        <div class="container">
+                            <div class="banner-content-sec">
+                                <div class="summber-vibes-wrapper">
+                                    <h1>
+                                        Summer Vibes
+                                    </h1>
+                                    <p>
+                                        Share your favourite destination or find inspiration for journey
+                                    </p>
+                                </div>
+                                <div class="video-sec">
+                                    <div class="video-image" onclick="playPause()">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                        <i class="fa fa-pause" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="video-info">
+                                        <h3>WATCH</h3>
+                                        <h1>STORY VIDEO</h1>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="show-trip-wrapper">
+                    <div class="show-trip-content">
+
+                        <div class="serach-share-wrapper">
+                            <div class="search-share-contant">
+                                <div class="search-wrapper">
+                                    <div class="search-sec">
+                                        <form>
+                                            <input type="text" name="search" id="search" placeholder="Just Find Yours">
+                                            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="share-content-sec">
+                                    <div class="share-wrapper">
+                                        <div class="share-sec">
+                                            <div class="share-icon">
+                                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="box-image">
+                            <img src="images/box1.jpg" />
+                            <div class="country-detail">
+                                <h2>SPAIN</h2>
+                                <p>Beautiful Sunny Country</p>
+                            </div>
+                            <div class="show-trips">
+                                <h2>SHOW TRIPS ></h2>
+                            </div>
+                        </div>
+
+                        <div class="box-image">
+                            <img src="images/box2.jpg" />
+                            <div class="country-detail">
+                                <h2>SPAIN</h2>
+                                <p>Beautiful Sunny Country</p>
+                            </div>
+                            <div class="show-trips">
+                                <h2>SHOW TRIPS ></h2>
+                            </div>
+                        </div>
+                        <div class="box-image">
+                            <img src="images/box3.jpg" />
+                            <div class="country-detail">
+                                <h2>SPAIN</h2>
+                                <p>Beautiful Sunny Country</p>
+                            </div>
+                            <div class="show-trips">
+                                <h2>SHOW TRIPS ></h2>
+                            </div>
+                        </div>
+
+                        <div class="box-image">
+                            <img src="images/box4.jpg" />
+                            <div class="country-detail">
+                                <h2>SPAIN</h2>
+                                <p>Beautiful Sunny Country</p>
+                            </div>
+                            <div class="show-trips">
+                                <h2>SHOW TRIPS ></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="slier-items">
+                    <div class="slider-wrapper">
+                        <div class="slider-sec">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="image_sec">
+                                        <img src="images/1.jpg">
+                                    </div>
+                                    <div class="image-content">
+                                        <div class="image-content-sec">
+                                            <p>Northeastern Italy</p>
+                                            <h1>Explore the Venice</h1>
+                                            <div class="rating-sec">
+                                                <div class="rating-bar">
+                                                    <div class="rating-bar-active">
+                                                        RATING
+                                                    </div>
+                                                </div>
+                                                <div class="rating-number">
+                                                    7 / 10
+                                                </div>
+                                            </div>
+                                            <div class="travel-cost-wrapper">
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>From 65$</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-bed" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>387 Hotels</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <p class="general-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto
+                                                provident, corporis expedita! Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto provident, corporis expedita!</p>
+                                            <div class="btn-sec">
+                                                <a href="#"><span>Discover More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image_sec">
+                                        <img src="images/2.jpg">
+                                    </div>
+                                    <div class="image-content">
+                                        <div class="image-content-sec">
+                                            <p>Northeastern Italy</p>
+                                            <h1>Explore the Venice</h1>
+                                            <div class="rating-sec">
+                                                <div class="rating-bar">
+                                                    <div class="rating-bar-active">
+                                                        RATING
+                                                    </div>
+                                                </div>
+                                                <div class="rating-number">
+                                                    7 / 10
+                                                </div>
+                                            </div>
+                                            <div class="travel-cost-wrapper">
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>From 65$</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-bed" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>387 Hotels</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <p class="general-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto
+                                                provident, corporis expedita! Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto provident, corporis expedita!</p>
+                                            <div class="btn-sec">
+                                                <a href="#"><span>Discover More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image_sec">
+                                        <img src="images/3.jpg">
+                                    </div>
+                                    <div class="image-content">
+                                        <div class="image-content-sec">
+                                            <p>Northeastern Italy</p>
+                                            <h1>Explore the Venice</h1>
+                                            <div class="rating-sec">
+                                                <div class="rating-bar">
+                                                    <div class="rating-bar-active">
+                                                        RATING
+                                                    </div>
+                                                </div>
+                                                <div class="rating-number">
+                                                    7 / 10
+                                                </div>
+                                            </div>
+                                            <div class="travel-cost-wrapper">
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>From 65$</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-bed" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>387 Hotels</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <p class="general-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto
+                                                provident, corporis expedita! Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto provident, corporis expedita!</p>
+                                            <div class="btn-sec">
+                                                <a href="#"><span>Discover More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image_sec">
+                                        <img src="images/4.jpg">
+                                    </div>
+                                    <div class="image-content">
+                                        <div class="image-content-sec">
+                                            <p>Northeastern Italy</p>
+                                            <h1>Explore the Venice</h1>
+                                            <div class="rating-sec">
+                                                <div class="rating-bar">
+                                                    <div class="rating-bar-active">
+                                                        RATING
+                                                    </div>
+                                                </div>
+                                                <div class="rating-number">
+                                                    7 / 10
+                                                </div>
+                                            </div>
+                                            <div class="travel-cost-wrapper">
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>From 65$</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-bed" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>387 Hotels</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <p class="general-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto
+                                                provident, corporis expedita! Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto provident, corporis expedita!</p>
+                                            <div class="btn-sec">
+                                                <a href="#"><span>Discover More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="image_sec">
+                                        <img src="images/5.jpg">
+                                    </div>
+                                    <div class="image-content">
+                                        <div class="image-content-sec">
+                                            <p>Northeastern Italy</p>
+                                            <h1>Explore the Venice</h1>
+                                            <div class="rating-sec">
+                                                <div class="rating-bar">
+                                                    <div class="rating-bar-active">
+                                                        RATING
+                                                    </div>
+                                                </div>
+                                                <div class="rating-number">
+                                                    7 / 10
+                                                </div>
+                                            </div>
+                                            <div class="travel-cost-wrapper">
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>From 65$</span>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="travel-cost-sec">
+                                                    <div class="fighter-logo">
+                                                        <i class="fa fa-bed" aria-hidden="true"></i>
+                                                    </div>
+
+                                                    <div class="fighter-cost">
+                                                        <span>387 Hotels</span>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <p class="general-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto
+                                                provident, corporis expedita! Accusamus error enim minima pariatur molestias similique, accusantium culpa possimus ipsum assumenda, nemo necessitatibus animi. Eum, harum sunt iusto provident, corporis expedita!</p>
+                                            <div class="btn-sec">
+                                                <a href="#"><span>Discover More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="denstination-wrapper">
+                        <div class="container">
+                            <div class="denstination-sec">
+                                <p>
+                                    Hundered Places For Holidays
+                                </p>
+                                <h2>
+                                    Choose your destination
+                                </h2>
+                            </div>
+
+                            <div class="denstination-content-sec">
+                                <div class="container">
+                                    <ul>
+                                        <li class="acitve active"><a href="#Italy">Italy</a></li>
+                                        <li><a href="#Greece">Greece</a></li>
+                                        <li><a href="#Spain">Spain</a></li>
+                                        <li><a href="#Croatia">Croatia</a></li>
+                                        <li><a href="#Portugal">Portugal</a></li>
+                                        <li><a href="#France">France</a></li>
+                                        <li><a href="#Monaco">Monaco</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="denstination-content-sec">
+                                <div class="container">
+                                    <div id="Italy" class="tab-content">
+                                        <div class="country-box">
+                                            <H2>Italy</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div id="Greece" class="tab-content">
+
+                                        <div class="country-box">
+                                            <H2>Greece</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                    </div>
+                                    <div id="Spain" class="tab-content">
+
+                                        <div class="country-box">
+                                            <H2>Spain</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+
+                                    </div>
+                                    <div id="Croatia" class="tab-content">
+
+                                        <div class="country-box">
+                                            <H2>Croatia</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                    </div>
+                                    <div id="Portugal" class="tab-content">
+
+                                        <div class="country-box">
+                                            <H2>Portugal</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                    </div>
+                                    <div id="France" class="tab-content">
+
+                                        <div class="country-box">
+                                            <H2>France</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                    </div>
+                                    <div id="Monaco" class="tab-content">
+
+                                        <div class="country-box">
+                                            <H2>Monaco</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                        <div class="country-box">
+                                            <H2>Rome</H2>
+                                            <p>Rome is the capital city and a special comune of Italy. Rome also serves as the capital of the Lazio region.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="instagram-wrapper">
+                        <div class="instagram-sec">
+
+                            <div class="instagram-box">
+                                <img src="images/11.jpg" />
+                                <div class="instagram-text">
+                                    <a href="#"> Instagram</a>
+                                </div>
+                            </div>
+
+                            <div class="instagram-box">
+                                <img src="images/22.jpg" />
+                                <div class="instagram-text">
+                                    <a href="#"> Instagram</a>
+                                </div>
+                            </div>
+                            <div class="instagram-box">
+                                <img src="images/33.jpg" />
+                                <div class="instagram-text">
+                                    <a href="#"> Instagram</a>
+                                </div>
+                            </div>
+                            <div class="instagram-box">
+                                <img src="images/44.jpg" />
+                                <div class="instagram-text">
+                                    <a href="#"> Instagram</a>
+                                </div>
+                            </div>
+                            <div class="instagram-box">
+                                <img src="images/55.jpg" />
+                                <div class="instagram-text">
+                                    <a href="#"> Instagram</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+            </section>
+            <section class="sec-footer">
+                <div class="up-arrow-sec">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div>
+                <footer>
+                    <div class="footer-wrapper">
+                        <div class="footer-sec">
+                            <div class="about-us">
+                                <h1>Scenic Products</h1>
+                                <div class="about-us-list"><a href="#">Web Design</a></div>
+                                <div class="about-us-list"><a href="#">Graphic Design</a></div>
+                                <div class="about-us-list"><a href="#">Web Developers</a></div>
+                                <div class="about-us-list"><a href="#">Resources</a></div>
+
+                            </div>
+
+                            <div class="Our-Services">
+                                <h1>Company</h1>
+                                <div class="about-us-list"><a href="#">About Us</a></div>
+                                <div class="about-us-list"><a href="#">Career</a></div>
+                                <div class="about-us-list"><a href="#">Blog</a></div>
+                                <div class="about-us-list"><a href="#">Resources</a></div>
+
+                            </div>
+                            <div class="Quick-Links">
+                                <h1>Support</h1>
+                                <div class="about-us-list"><a href="#">Support</a></div>
+                                <div class="about-us-list"><a href="#">Privacy</a></div>
+                                <div class="about-us-list"><a href="#">Terms of Service</a></div>
+
+                            </div>
+                            <div class="share-info">
+                                <h1>Contact Us</h1>
+                                <div class="share-link">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </footer>
+                <div class="footer-txt about-us-list">
+                    Copyright ©2020 All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#">Colorlib</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+
+    <script src="js/style.js"></script>
+</body>
+
+</html>
